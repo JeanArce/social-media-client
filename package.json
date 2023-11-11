@@ -45,5 +45,10 @@
     "*.scss": [
       "prettier --write"
     ]
+  },
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": ["jest-localstorage-mock"]
   }
+
 }
