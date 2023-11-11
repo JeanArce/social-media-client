@@ -1,5 +1,7 @@
 import 'jest-localstorage-mock';
-require('jest-fetch-mock').enableMocks();
+const fetchMock = require('jest-fetch-mock');
+fetchMock.enableMocks();
+fetchMock.dontMock();
 import { login } from './login';
 
 describe('login', () => {
