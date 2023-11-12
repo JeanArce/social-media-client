@@ -9,7 +9,7 @@ import { login } from './login';
 global.fetch = jest.fn(() =>
   Promise.resolve({
     ok: true,
-    json: () => Promise.resolve({ accessToken: '12345' }),
+    json: () => Promise.resolve({ accessToken: '89103y23' }),
     statusText: 'OK',
   }),
 );

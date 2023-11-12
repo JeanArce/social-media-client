@@ -1,5 +1,5 @@
 describe('login', () => {
-  it('can login and access profile', () => {
+  it('can login and access profile then logout afterwards', () => {
     cy.clock();
     cy.visit('/');
     cy.tick(1000);
