@@ -1,3 +1,9 @@
+[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/end-to-end-test/badge.svg)](https://github.com/JeanArce/social-media-client/actions)             
+[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/unit-test/badge.svg)](https://github.com/JeanArce/social-media-client/actions) 
+[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/end-to-end-test/pages.svg)](https://github.com/JeanArce/social-media-client/actions) 
+
+
+
 # Workflow 
 It refers to a set of conventions and procedures that dictate how developers collaborate on a project using Git as the version control system. Git workflows help manage and track changes to the source code, making collaboration more efficient and organized.
 
