@@ -1,6 +1,6 @@
-[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/end-to-end-test/badge.svg)](https://github.com/JeanArce/social-media-client/actions)             
-[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/unit-test/badge.svg)](https://github.com/JeanArce/social-media-client/actions) 
-[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/end-to-end-test/pages.svg)](https://github.com/JeanArce/social-media-client/actions) 
+[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/end-to-end-test.yml/badge.svg)](https://github.com/JeanArce/social-media-client/actions)             
+[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/JeanArce/social-media-client/actions) 
+[![Workflow Status](https://github.com/JeanArce/social-media-client/actions/workflows/end-to-end-test.yml/pages.svg)](https://github.com/JeanArce/social-media-client/actions) 
 
 
 
