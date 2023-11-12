@@ -32,7 +32,7 @@ Install Jest and cypress for unit and e2e testing.
     For Cypress, use the Electron browser for e2e testing.
  
 ## Running the project
-    On commit prettier and eslint will run for formatting. It triggers currently in workflow-formatting branch
+    On commit prettier and eslint will run for formatting.
 - ## Jest
     . running command `npm run test-unit` will run unit tests for login and logout.
           "test": "npm run test-unit",
@@ -44,7 +44,8 @@ Install Jest and cypress for unit and e2e testing.
 
          "test-cypress": "npm run test-e2e",
          "test-e2e": "cypress open"
-
+## Deployment
+    Using GitHUb Action
     On merge or on push in master branch will trigger to deploy to github pages 
 
 
