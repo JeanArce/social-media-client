@@ -11,10 +11,6 @@ describe('login', () => {
     cy.get('#loginPassword').type('TEST_PASSWORD{enter}', { delay: 500 });
     cy.tick(1000);
     cy.wait(3000);
-    cy.window().then((win) => {
-      const token = win.localStorage.getItem('token');
-      cy.log(token);
-      expect(token).to.exist;
-    });
+    cy.window().its('localStorage.token').should('exist');
   });
 });

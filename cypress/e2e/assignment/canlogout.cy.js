@@ -16,9 +16,6 @@ describe('login', () => {
       cy.wait(8000).get('button[data-auth="logout"]').click();
     });
     cy.wait(3000);
-    cy.window().then((win) => {
-      const token = win.localStorage.getItem('token');
-      expect(token).to.be.null;
-    });
+    cy.window().its('localStorage.token').should('not.exist');
   });
 });
