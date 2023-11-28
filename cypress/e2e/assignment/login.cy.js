@@ -1,4 +1,16 @@
 describe('login', () => {
+  before(() => {
+    cy.clearLocalStorageSnapshot();
+  });
+
+  beforeEach(() => {
+    cy.restoreLocalStorage();
+  });
+
+  afterEach(() => {
+    cy.saveLocalStorage();
+  });
+
   it('can login and access profile', () => {
     cy.clock();
     cy.visit('/');
@@ -10,7 +22,7 @@ describe('login', () => {
     cy.get('#loginEmail').type('TEST_EMAIL', { delay: 500 });
     cy.get('#loginPassword').type('TEST_PASSWORD{enter}', { delay: 500 });
     cy.wait(15000);
-    cy.visit('/');
+
     cy.window().should((win) => {
       expect(win.localStorage.token).to.exist;
     });
