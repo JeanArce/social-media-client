@@ -13,6 +13,7 @@ describe('login', () => {
     cy.wait(3000);
     cy.window().then((win) => {
       const token = win.localStorage.getItem('token');
+      cy.log(token);
       expect(token).to.exist;
     });
   });
