@@ -5,6 +5,7 @@ describe('login', () => {
 
   beforeEach(() => {
     cy.restoreLocalStorage();
+    cy.visit('/');
   });
 
   afterEach(() => {
