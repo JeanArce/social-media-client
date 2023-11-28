@@ -8,9 +8,7 @@ describe('login', () => {
     });
     cy.tick(1000);
     cy.get('#loginEmail').type('TEST_EMAIL', { delay: 500 });
-    cy.get('#loginPassword').type('TEST_PASSWORD', { delay: 500 });
-
-    cy.get('form#log-in').submit();
+    cy.get('#loginPassword').type('TEST_PASSWORD{enter}', { delay: 500 });
 
     cy.window().its('localStorage.token').should('exist');
   });
