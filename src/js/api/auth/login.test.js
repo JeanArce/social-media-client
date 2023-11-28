@@ -1,9 +1,3 @@
-// import 'jest-localstorage-mock';
-// const fetchMock = require('jest-fetch-mock');
-// fetchMock.enableMocks();
-// fetchMock.dontMock();
-
-//import localStorageMock from './localStorage';
 import { login } from './login';
 
 global.fetch = jest.fn(() =>

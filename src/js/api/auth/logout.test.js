@@ -1,10 +1,16 @@
-import "jest-localstorage-mock";
-import { logout } from "./logout";
+import * as storage from '../../storage/index.js';
+import { logout } from './logout';
 
-describe("logout", () => {
-  it("it checks if it clears browser storage on logout", () => {
+jest.mock('../../storage/index.js', () => {
+  return {
+    remove: jest.fn(),
+  };
+});
+
+describe('logout', () => {
+  it('checks if it clears browser storage on logout', () => {
     logout();
-    const token = JSON.parse(localStorage.getItem("token"));
-    expect(token).toBeNull();
+    expect(storage.remove).toHaveBeenCalledTimes(2);
+    expect(storage.remove).toHaveBeenCalledWith('token');
   });
 });
