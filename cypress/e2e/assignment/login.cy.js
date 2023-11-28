@@ -23,7 +23,7 @@ describe('login', () => {
     cy.get('#loginPassword').type('TEST_PASSWORD{enter}', { delay: 500 });
     cy.wait(15000);
 
-    cy.window().should((win) => {
+    cy.window().then((win) => {
       expect(win.localStorage.token).to.exist;
     });
   });
