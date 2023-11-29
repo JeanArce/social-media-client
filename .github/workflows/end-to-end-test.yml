@@ -18,4 +18,4 @@ jobs:
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v4
         with:
-          browser: electron
+          browser: chrome
