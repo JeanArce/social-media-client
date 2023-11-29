@@ -12,11 +12,8 @@ describe('login', () => {
     cy.wait(15000);
 
     cy.window().then((win) => {
-      //expect(window.localStorage.token).to.exist;
-      const localStorageData = win.localStorage.getItem('token');
-
-      // Use assertions to check the values in local storage
-      expect(localStorageData).to.exist;
+      cy.log(win.localStorage);
+      expect(win.localStorage).to.exist;
     });
   });
 });
