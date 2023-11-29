@@ -27,7 +27,7 @@ Object.defineProperty(global, 'localStorage', { value: mockStorage });
 
 describe('login', () => {
   it('fetches and stores a token in browser storage', async () => {
-    await login('TEST_EMAIL', 'TEST_PASSWORD');
+    await login('gabriel@noroff.no', 'gabriel@*05');
     const token = JSON.parse(localStorage.getItem('token'));
     expect(token).not.toBeNull();
   });
