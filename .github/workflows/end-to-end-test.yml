@@ -18,6 +18,10 @@ jobs:
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
-          start: npm run start
           browser: chrome
+      - name: Upload screenshots
+        uses: actions/upload-artifact@latest
+        if: failure()
+        with:
+            name: cypress-snapshots
+            path: cypress/snapshots
