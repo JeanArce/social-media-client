@@ -12,8 +12,8 @@ describe('login', () => {
     cy.wait(15000);
 
     cy.window().then((win) => {
-      cy.log(win.localStorage);
-      expect(win.localStorage.getItem('token')).to.exist;
+      cy.log('localstorage', win.localStorage);
+      expect(win.localStorage.getItem('token')).to.not.be.null;
     });
   });
 });
