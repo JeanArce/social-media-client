@@ -15,9 +15,10 @@ jobs:
       - name: Checkout under $GITHUB_WORKSPACE
         uses: actions/checkout@main
 
-      - name: run cypress tests with electron
+      - name: run cypress tests with chrome
         uses: cypress-io/github-action@v6
         with:
+          build: npm run build
           browser: chrome
       - name: Upload screenshots
         uses: actions/upload-artifact@v3

@@ -7,8 +7,8 @@ describe('login', () => {
       cy.get('button[data-bs-target="#loginModal"]').click();
     });
     cy.tick(1000);
-    cy.get('#loginEmail').type('TEST_EMAIL', { delay: 500 });
-    cy.get('#loginPassword').type('TEST_PASSWORD{enter}', { delay: 500 });
+    cy.get('#loginEmail').type('gabriel@noroff.no', { delay: 500 });
+    cy.get('#loginPassword').type('gabriel@*05{enter}', { delay: 500 });
     cy.wait(15000);
 
     cy.window().then((win) => {
